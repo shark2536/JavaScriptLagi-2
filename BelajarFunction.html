@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sapaOrang(nama, waktu) {
+            document.writeln(`Hallo ${nama} selamat ${waktu}`);
+        }
+
+        function cekCuaca() {
+            const cuacaBadai = true;
+            if(cuacaBadai == true) {
+                document.writeln("Cuaca Badai, berhati-hati dalam beraktivitas di luar!");
+            } else {
+                document.writeln("Cuaca Cerah!");
+            }
+        }
+
+        function abjad() {
+            const variabelAbjadAwal = "A";
+            if(variabelAbjadAwal != false) {
+                document.writeln("A sama dengan A");
+            } else {
+                document.writeln("A tidak sama dengan B");
+            }
+        }
+
+        function terimaParameterTambah(bilSatu, bilDua) {
+            document.writeln(`${bilSatu} + ${bilDua} = `);
+            return document.writeln(bilSatu + bilDua);
+        }
+
+        function terimaParameterKurang(bilSatu, bilDua) {
+            document.writeln(`${bilSatu} - ${bilDua} = `);
+            return document.writeln(bilSatu - bilDua);
+        }
+
+        function terimaParameterKali(bilSatu, bilDua) {
+            document.writeln(`${bilSatu} x ${bilDua} = `);
+            return document.writeln(bilSatu * bilDua);
+        }
+
+        function terimaParameterBagi(bilSatu, bilDua) {
+            document.writeln(`${bilSatu} / ${bilDua} = `);
+            return document.writeln(bilSatu / bilDua);
+        }
+        
+
+        sapaOrang("Raffa", "malam");
+        document.writeln("<br>");
+        sapaOrang("Anton", "malam");
+        document.writeln("<br>");
+        terimaParameterTambah(1, 5);
+        document.writeln("<br>");
+        terimaParameterKurang(10, 5);
+        document.writeln("<br>");
+        terimaParameterKali(2, 5);
+        document.writeln("<br>");
+        terimaParameterBagi(50, 5);
+        document.writeln("<br>");
+        abjad();
+    </script>
+</body>
+</html>
